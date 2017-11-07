@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: white;
+}
+
+section {
+  background: lightblue;
+}
+
+#setupContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 1px;
+  display: none;
+  border-style: solid;
+  border-color: gray;
+  text-align: center;
+  font-size:1vw;
+  color: black;
+}
+
+#topContainer {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 3;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#shiftsContainer {
+  grid-column: 1;
+  width: 34vw;
+}
+
+#newsContainer {
+  grid-column: 2;
+  width: 33vw;
+}
+
+#eventsContainer {
+  grid-column: 3;
+  width: 33vw;
+}
+
+.shiftsDate {
+  background: lightblue;
+  text-align: center;
+  font-size: 3vw;
+  color: black;
+  border-style: solid;
+  border-color: gray;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.shiftStripe:nth-child(odd) {
+  background: lightgray;
+  text-align: center;
+  font-size: 2vw;
+  color: black;
+  border-style: solid;
+  border-color: gray;
+  padding-bottom: 1px;
+  display: grid;
+}
+
+.shiftStripe:nth-child(even) {
+  background: darkgray;
+  text-align: center;
+  font-size: 2vw;
+  color: black;
+  border-style: solid;
+  border-color: gray;
+  padding-bottom: 1px;
+  display: grid
+}
+
+.singleShift {
+  font-size: 2vw;
+  color: black;
+  border-style: none;
+  padding-bottom: 1px;
+}
+
+.newsHeading {
+  background: lightblue;
+  text-align: center;
+  font-size: 3vw;
+  color: green;
+  border-style: solid;
+  border-color: gray;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.newsBlock {
+  background: lightgray;
+  border-style: solid;
+  border-color: gray;
+}
+
+.newsBlockTitle {
+  font-size: 2vw;
+  text-align: center;
+  color: black;
+  padding-bottom: 1px;
+}
+
+.newsBlockBody {
+  font-size: 1vw;
+  text-align: justify;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.eventsHeading {
+  background: lightblue;
+  text-align: center;
+  font-size: 3vw;
+  color: green;
+  border-style: solid;
+  border-color: gray;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.eventBlock:nth-child(even) {
+  background: darkgray;
+  border-style: solid;
+  border-color: gray;
+}
+
+.eventBlock:nth-child(odd) {
+  background: lightgray;
+  border-style: solid;
+  border-color: gray;
+}
+
+.eventBlockDate {
+  font-size: 1.5vw;
+  text-align: center;
+  color: black;
+  padding-bottom: 1px;
+}
+
+.eventBlockName {
+  font-size: 2vw;
+  text-align: center;
+  color: black;
+}
+
+.eventBlockBody {
+  font-size: 1vw;
+  text-align: center;
+  color: black;
+  padding-bottom: 1px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>My Branch Today</title>
+  <link rel="stylesheet" type="text/css" href="3r-mybranch-today.css" />
+</head>
+<body>
+
+  <section id="setupContainer">
+    <h1>My Branch Today</h1>
+    <p>
+      To get started, enter your API key token. You can get one by going to your own Directory
+      page and clicking the "API keys" link on the right hand side, then on "New API Key".
+    </p>
+    <input type="text" id="apiToken" />
+    <p>
+      Shifts and events are refreshed from Three Rings.  You can choose how often below, in MINUTES: we recommend every 30 or so.
+    </p>
+    <input type="number" id="shiftsEventsToken" />
+    <p>
+      News items are displayed singly and rotated every few SECONDS.  You can choose how many seconds below: we recommed every 20 or so.
+    </p>
+    <input type="number" id="newsToken" />
+    <p>
+      Click start to start the application.  You can come back to this screen by clicking on the "Upcoming Events" header.
+    </p>
+    <p>
+    <button id="start">Start</button>
+    </p>
+  </section>
+  
+  <section id="topContainer">
+    <section id="shiftsContainer"></section>
+    <section id="newsContainer"></section>
+    <section id="eventsContainer"></section>
+  </section>
+  
+  <script type="text/javascript" src="3r-mybranch-today.js"></script>
+</body>
+</html>
